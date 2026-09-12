@@ -6,9 +6,9 @@
 # 각 페이지 설명 및 URL
 - nostyle.html : CSS를 적용하지 않은 기본 HTML 구조 https://2026-oss-assign02-cyan.vercel.app/nostyle.html
 - style1.html : nostyle.html과 동일한 HTML에 CSS(그린 테마, Grid 레이아웃)를 적용 https://2026-oss-assign02-cyan.vercel.app/style1.html
-style2.html : nostyle.html과 동일한 HTML에 CSS(테라코타 테마, Grid 레이아웃)를 적용 https://2026-oss-assign02-cyan.vercel.app/style2.html
-bootstrap_ex.html : Bootstrap CDN을 이용해 Navbar, Hero, Features, Footer로 구성한 예제 페이지 https://2026-oss-assign02-cyan.vercel.app/bootstrap_ex.html
-index.html : 위 4개 페이지로 이동할 수 있는 목차 페이지 https://2026-oss-assign02-cyan.vercel.app/index.html
+- style2.html : nostyle.html과 동일한 HTML에 CSS(테라코타 테마, Grid 레이아웃)를 적용 https://2026-oss-assign02-cyan.vercel.app/style2.html
+- bootstrap_ex.html : Bootstrap CDN을 이용해 Navbar, Hero, Features, Footer로 구성한 예제 페이지 https://2026-oss-assign02-cyan.vercel.app/bootstrap_ex.html
+- index.html : 위 4개 페이지로 이동할 수 있는 목차 페이지 https://2026-oss-assign02-cyan.vercel.app/index.html
 
 # Vercel Deploy URL
 https://2026-oss-assign02-cyan.vercel.app/
