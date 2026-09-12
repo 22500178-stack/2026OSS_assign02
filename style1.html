@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Stylesheet 1</title>
+<style>
+    body {
+        display: grid;
+        grid-template-columns: 200px 1fr 300px;
+        grid-template-areas:
+            "title    title    title"
+            "subtitle subtitle subtitle"
+            "menu     c1       sidebar"
+            "menu     c2       sidebar"
+            "menu     c3       sidebar"
+            "menu     c4       sidebar"
+            "footer   footer   footer";
+        gap: 15px;
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        grid-area: title;
+        background-color: #3cb371;
+        color: white;
+        margin: 0;
+        padding: 25px 30px 5px 30px;
+        border-radius: 6px 6px 0 0;
+        font-size: 40px;
+    }
+
+    body > p:nth-of-type(1) {
+        grid-area: subtitle;
+        background-color: #3cb371;
+        color: white;
+        margin: 0;
+        padding: 0 30px 20px 30px;
+        border-radius: 0 0 6px 6px;
+        font-size: 18px;
+    }
+
+    ul {
+        grid-area: menu;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        background-color: white;
+        color: #222222;
+        border: 1px solid #cccccc;
+        padding: 12px 15px;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    ul li:first-child {
+        background-color: #3cb371;
+        color: white;
+        border-color: #3cb371;
+    }
+
+    h2 { grid-area: c1; margin: 0; color: #222222; }
+    body > p:nth-of-type(2) { grid-area: c2; margin: 0; line-height: 1.5; color: #333333; }
+    h3 { grid-area: c3; margin: 0; color: #222222; }
+    body > p:nth-of-type(3) { grid-area: c4; margin: 0; line-height: 1.5; color: #333333; }
+
+    body > p a, div p a {
+        color: #222222;
+        text-decoration: underline;
+    }
+
+    div.sidebar {
+        grid-area: sidebar;
+        background-color: #4a90d9;
+        color: white;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+
+    div.sidebar h3, div.sidebar p {
+        color: white;
+        margin: 0 0 8px 0;
+    }
+
+    div.content {
+        grid-area: footer;
+        background-color: #f0f0f0;
+        border-radius: 6px;
+        padding: 20px 40px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    div.content p {
+        margin: 0;
+        color: #333333;
+        line-height: 1.5;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Welcome to Kim Jiwon's Homepage (22500178)</h1>
+
+<p>Use the menu to select different Stylesheets</p>
+
+<ul>
+<li>Stylesheet 1</li>
+<li>Stylesheet 2</li>
+<li>Stylesheet 3</li>
+<li>Stylesheet 4</li>
+<li>No Stylesheet</li>
+</ul>
+
+<h2>Same Page Different Stylesheets</h2>
+
+<p>
+This is a demonstration of how different stylesheets can change the layout of your HTML page.
+You can change the layout of this page by selecting different stylesheets in the menu,
+or by selecting one of the following links:
+<a href="#">Stylesheet1</a>,
+<a href="#">Stylesheet2</a>,
+<a href="#">Stylesheet3</a>,
+<a href="#">Stylesheet4</a>.
+</p>
+
+<h3>No Styles</h3>
+
+<p>
+This page uses DIV elements to group different sections of the HTML page.
+Click here to see how the page looks like with no stylesheet:
+<a href="#">No Stylesheet</a>.
+</p>
+
+<div class="sidebar">
+<h3>Side-Bar</h3>
+<p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat.
+</p>
+</div>
+
+<div class="content">
+<p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+nulla facilisi.
+</p>
+</div>
+
+</body>
+</html>
